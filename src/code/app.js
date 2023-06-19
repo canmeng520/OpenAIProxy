@@ -9,7 +9,7 @@
 
 
   app.use('/', createProxyMiddleware({
-    target: 'https://api.openai.com',
+      target: 'http://122.9.151.0:8085',
     changeOrigin: true,
     onProxyRes: function (proxyRes, req, res) {
       proxyRes.headers['Access-Control-Allow-Origin'] = '*';
